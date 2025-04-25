@@ -21,5 +21,5 @@ write_csv(data, opt$output)
 
 head(data)
 
-# cmd to run Rscript scripts/01-read_data.R --output=data/penguins_data.csv
+# cmd to run: Rscript scripts/01-read_data.R --output=data/penguins_data.csv
 print("script 1 successful! :p")
