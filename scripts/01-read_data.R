@@ -7,6 +7,7 @@ library(tidyverse)
 library(palmerpenguins)
 library(readr)
 library(docopt)
+source("R/01-download_data.R")
 
 "this script reads the data and loads
 from the package palmerpenguins
@@ -15,9 +16,7 @@ Usage: scripts/01-read_data.R --output=<output>
 
 opt <- docopt(doc)
 
-data <- penguins
-
-write_csv(data, opt$output)
+download_data(opt$output)
 
 head(data)
 

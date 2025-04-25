@@ -23,4 +23,4 @@ clean:
 	rm -f data/penguins_data.csv
 	rm -f data/clean_penguins.csv
 	rm -f results/scatterplot.png
-	rm -f docs/index.html
+	rm -f docs/analysis.html
