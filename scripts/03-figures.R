@@ -6,6 +6,7 @@
 library(ggplot2)
 library(docopt)
 library(readr)
+source("R/create_viz.R")
 
 " creates a scatterplot for bill and flipper length of penguins
 Usage: scripts/03-figures.R --input=<input> --figure=<figure>

@@ -5,6 +5,7 @@
 #'
 library(tidyverse)
 library(docopt)
+source("R/clean_data.R")
 
 "clean data and remove any rows with missing values
 Usage: scripts/02-clean_data.R --input=<input> --output=<output>
