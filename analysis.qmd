@@ -1,0 +1,38 @@
+---
+title: "Simple Penguin Data Analysis"
+author: "Maxine Paredes"
+format: 
+  html:
+    echo: false
+    message: false
+    warning: false
+    output: docs
+---
+
+# Introduction
+In this report, we analyze Palmer penguin data, downloaded directly from the web, perform basic cleaning, and create a scatter plot.
+
+# Data Import
+We read the data from the palmerpenguins package CSV on GitHub:
+
+```{r}
+penguins_data <- readr::read_csv("data/penguins_data.csv")
+head(penguins_data)
+```
+
+# Data Cleaning
+Remove rows with missing values:
+
+```{r}
+penguins_clean <- readr::read_csv("data/clean_penguins.csv")
+head(penguins_clean)
+```
+
+# Visualization
+
+![Scatterplot of bill length vs flipper length, colored by species](results/scatterplot.png){#fig-scatterplot width=65%}
+
+# Conclusion
+
+We loaded, cleaned, and visualized Palmer penguin data from the internet.
+The plot shows species differences in bill and flipper length.
